@@ -133,6 +133,10 @@ color_temp_value_template:
   description: "Defines a [template](/docs/configuration/templating/#using-templates-with-the-mqtt-integration) to extract the color temperature value."
   required: false
   type: string
+command_template:
+  description: "Defines a [template](/docs/configuration/templating/#using-templates-with-the-mqtt-integration) to generate the payload to send to `command_topic`. Available variables: `value`."
+  required: false
+  type: template
 command_topic:
   description: The MQTT topic to publish commands to change the switch state.
   required: true
